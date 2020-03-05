@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>基础css3动画</title>
+  <style>
+    #box {
+      width: 100px;
+      height: 100px;
+      /* animation: bgc 5s; */
+      animation: show 1s;
+      background-color: orange;
+      margin: 200px auto;
+    }
+    @keyframes bgc {
+      0%   {background: red;}
+      25%  {background: yellow;}
+      50%  {background: blue;}
+      100% {background: green;}
+    }
+    @keyframes show {
+      0%   {opacity: 1;}
+      50%  {opacity: 0;}
+      100% {opacity: 1;}
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+  <!-- 使用 @keyframes 定义动画，使用0% 100%来定义每个阶段的动作，也可以用from，to来定义 -->
+  <!-- 使用animation 来绑定动画属性
+      animation-name 第一个参数为动画名称，
+      animation-duration 第二个参数为动画时间，必填
+      animation-timing-function 动画将如何完成一个周期，linear，ease低速开始，加快，低速结束
+      animation-iteration-count 动画执行播放的次数  infinite 永远播放
+    -->
+</body>
+</html>

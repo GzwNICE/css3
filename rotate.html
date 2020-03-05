@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>css3 2D 动画</title>
+  <style>
+    #box {
+      width: 100px;
+      height: 100px;
+      /* animation: rotate 2s linear; */
+      animation: translate 2s linear infinite;
+      /* animation: scale 2s linear; */
+      /* animation: skew 2s linear; */
+      background-color: orange;
+      margin: 200px auto;
+    }
+    @keyframes rotate {
+      0%   {
+        transform: rotate(0deg);
+      }
+      50%  {
+        transform: rotate(30deg);
+      }
+      100%  {
+        transform: rotate(0deg);
+      }
+    }
+    @keyframes translate {
+      0%   {
+        transform: translate(0,0);
+      }
+      50%  {
+        transform: translate(120px,60px);
+      }
+      100%  {
+        transform: translate(0,0);
+      }
+    }
+    @keyframes scale {
+      0%   {
+        transform: scale(1,1);
+      }
+      50%  {
+        transform: scale(2,2);
+      }
+      100%  {
+        transform: scale(1,1);
+      }
+    }
+    @keyframes skew {
+      0%   {
+        transform: skew(0,0);
+      }
+      50%  {
+        transform: skew(30deg,30deg);
+      }
+      100%  {
+        transform: skew(0,0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div id="box"></div>
+  <!-- translate 位移 接收两个参数，x轴和y轴给定的参数移动 -->
+  <!-- rotate 旋转，给定一个值顺时针旋转 单位为 deg  允许为负数，负时针旋转-->
+  <!-- scale 缩放 两个参数分别为原来元素大小的倍数，第一个参数为宽度的倍数，第二个为高度的倍数 -->
+  <!-- skew 倾斜 两个参数分别为x和y轴的倾斜角度，参数为空，默认为0，支持负数 -->
+</body>
+</html>

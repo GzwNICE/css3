@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>transition过渡动画</title>
+  <style>
+    #box{
+      width: 100px;
+      height: 100px;
+      background-color: orange;
+      margin: 200px auto;
+      transition: width 2s linear, height 2s linear;
+    }
+    #box:hover {
+      width: 300px;
+      height: 300px;
+    }
+  </style>
+</head>
+<body> 
+  <div id="box"></div>
+  <!-- transition 过渡动画 -->
+  <!-- 两项必填： 指定要添加过渡效果的css属性，指定效果的持续时间 -->
+  <!-- 第一个参数为应用过渡的css属性名称 -->
+  <!-- 第二个参数为应用过渡的css属性的所花费的时间 -->
+  <!-- 第三个参数为应用过渡的css属性的所使用的时间曲线 默认ease -->
+  <!-- 第四个参数为应用过渡的css属性的开始时间 -->
+</body>
+</html>
